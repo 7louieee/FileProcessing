@@ -9,8 +9,7 @@ Public Class Form1
 
 
             Using writer As New StreamWriter(filePath, True) 'True to append
-                writer.WriteLine("Hello, this is a test file")
-                writer.WriteLine("Second Line of Text")
+                writer.WriteLine("Kunwari pinalitan")
             End Using
 
             MessageBox.Show("Data written successfully.", "Sucess!", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Information)
@@ -25,7 +24,15 @@ Public Class Form1
 
     Private Sub btnRead_Click(sender As Object, e As EventArgs) Handles btnRead.Click
 
+        Dim filepath As String = "sample.txt"
 
+        Using reader As New StreamReader(filepath)
+
+            Dim content As String = reader.ReadToEnd()
+
+            MessageBox.Show(content, "File Content:")
+
+        End Using
 
     End Sub
 End Class
