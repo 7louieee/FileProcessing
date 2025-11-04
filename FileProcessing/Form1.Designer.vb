@@ -22,17 +22,29 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnWrite = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnWrite
+        '
+        Me.btnWrite.Location = New System.Drawing.Point(322, 215)
+        Me.btnWrite.Name = "btnWrite"
+        Me.btnWrite.Size = New System.Drawing.Size(166, 57)
+        Me.btnWrite.TabIndex = 0
+        Me.btnWrite.Text = "Write"
+        Me.btnWrite.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(482, 412)
+        Me.ClientSize = New System.Drawing.Size(804, 512)
+        Me.Controls.Add(Me.btnWrite)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
+    Friend WithEvents btnWrite As Button
 End Class
