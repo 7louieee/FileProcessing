@@ -27,9 +27,9 @@ Partial Class Form1
         '
         'btnWrite
         '
-        Me.btnWrite.Location = New System.Drawing.Point(322, 215)
+        Me.btnWrite.Location = New System.Drawing.Point(159, 89)
         Me.btnWrite.Name = "btnWrite"
-        Me.btnWrite.Size = New System.Drawing.Size(166, 57)
+        Me.btnWrite.Size = New System.Drawing.Size(486, 316)
         Me.btnWrite.TabIndex = 0
         Me.btnWrite.Text = "Write"
         Me.btnWrite.UseVisualStyleBackColor = True

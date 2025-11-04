@@ -5,10 +5,10 @@ Public Class Form1
 
         Try
 
-            Dim filePath As String = "sample.txt"
+            Dim filePath As String = "sample.txt" 'comment na random, 'wag mong pansinin
 
 
-            Using writer As New StreamWriter(filePath)
+            Using writer As New StreamWriter(filePath, True) 'True to append
                 writer.WriteLine("Hello, this is a test file")
                 writer.WriteLine("Second Line of Text")
             End Using
